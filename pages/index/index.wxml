@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="items">
+        <view class="item" wx:for="{{lists}}" bindtap="detail" wx:for-item="v" wx:key="its" data-id="{{index}}" data-title="{{v.title}}">
+            <view class="i-top">
+                <image class="i-img" src="{{v.imgUrl}}"></image>
+                <!--<video id="vds-{{index}}" class="i-video" wx:if="{{v.isVideo}}" src="{{v.videoUrl}}" controls="{{controls}}" bindtap="play"></video>-->
+                <view class="i-video-play"></view>
+            </view>
+            <view class="content">
+                <view class="c-top">
+                    <text class="title">{{v.title}}</text>
+                    <text class="info ellipsis-3">{{v.info}}</text>
+                </view>
+                <view class="c-bottom">
+                    <view class="user">
+                        <image class="u-img" src="{{v.avatar}}"></image>
+                        <view class="u-box">
+                            <text class="u-name">{{v.uName}}</text>
+                            <!--<text class="u-time">{{v.time}}</text>-->
+                        </view>
+                    </view>
+                    <view class="right">
+                        <text class="iconfont icon-liulan1 r-icon-browse"> {{v.browse}}</text>
+                        <text class="iconfont icon-xihuan r-icon-like"> {{v.like}}</text>
+                        <text class="iconfont icon-pinglun1 r-icon-comment"> {{v.comment}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-loadmore weui-loadmore_line weui-bg-transparent">
+        <view class="weui-loadmore__tips weui-loadmore__tips_in-line">我是有底线的</view>
+    </view>
+    <!--悬浮菜单-->
+    <!--<view class="menu">
+        <text class="iconfont icon-svg35"></text>
+    </view>-->
+</view>

@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="user-top">
+        <image class="avatar" src="http://soupu.oss-cn-shanghai.aliyuncs.com/images/banner4.jpg"></image>
+        <text class="uname">雨碎江南</text>
+        <text class="info">86版《西游记》绝对是那代人的国民记忆，放假天天等着看，一遍又一遍，悟空被压在五指山下经历春夏秋冬</text>
+    </view>
+</view>

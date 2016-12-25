@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/details/detail",
+    "pages/user/user",
+    "pages/library/library",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#be181b",
+    "navigationBarTitleText": "emoji评论",
+    "navigationBarTextStyle":"#ffffff",
+    "enablePullDownRefresh":true,
+    "onReachBottom":true
+  },
+  "tabBar": {
+    "color":"#333",
+    "selectedColor": "#be181b",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath":"images/tabBar/home.png",
+      "selectedIconPath":"images/tabBar/home-active.png",
+      "text": "首页"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "iconPath":"images/tabBar/user.png",
+      "selectedIconPath":"images/tabBar/user-active.png",
+      "text": "我的"
+    }]
+  },
+  "debug":true
+}
